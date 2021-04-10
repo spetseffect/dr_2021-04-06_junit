@@ -22,10 +22,12 @@ public class StrFuncTest {
     public void testVowelCount(){
         int expected=StrFunc.VowelCount("очередной");
         int actual=4;
-
     }
     @Test
-    public void testConsonantCount(){}
+    public void testConsonantCount(){
+        int expected=StrFunc.VowelCount("очередной");
+        int actual=5;
+    }
     @Test
     public void testWordCount(){}
 }
