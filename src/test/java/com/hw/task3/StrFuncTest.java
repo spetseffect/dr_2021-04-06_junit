@@ -11,7 +11,7 @@ public class StrFuncTest {
     public static void init(){
         str="Тут какя-то строка для тестирования и для очередной тренировки набора текста вслепую. " +
                 "Также тут дополнительно несколько просто наборов букв для количества: авырпдляав, тута, набор, текст.";
-        word="для";
+        word="Тут";
     }
     @Test
     public void testPalindrom(){
@@ -33,6 +33,7 @@ public class StrFuncTest {
     @Test
     public void testWordCount(){
         int expected=StrFunc.WordCount(str,word);
-        int actual=5;
+        int actual=2;
+        assertEquals(expected,actual,"testWordCount failed");
     }
 }
