@@ -12,7 +12,7 @@ public class StrFunc {
     }
     public static Integer VowelCount(String str){
         int count=0;
-        Pattern p=Pattern.compile("[аеёиоуыэюяaeiouy]");
+        Pattern p=Pattern.compile("[аеёиоуыэюяaeiouy]",Pattern.CASE_INSENSITIVE);
         Matcher m=p.matcher(str);
         while (m.find()){
             count++;
