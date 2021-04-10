@@ -1,4 +1,4 @@
-package com.hw.junit;
+package com.hw.task1;
 
 import java.util.Objects;
 
@@ -16,7 +16,7 @@ public class Triangle implements IFigure{
     @Override
     public Double getArea() {
         double p=(a+b+c)/2;
-        return p*Math.sqrt(p*(p-a)*(p-b)*(p-c));
+        return Math.sqrt(p*(p-a)*(p-b)*(p-c));
     }
     public boolean check(){
         return a+b>c && a+c>b && b+c>a;
