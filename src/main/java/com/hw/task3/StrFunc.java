@@ -23,7 +23,7 @@ public class StrFunc {
         return MatchesCounterCaseInsensitive(str,"[аеёиоуыэюяaeiouy]{1}");
     }
     public static Integer ConsonantCount(String str){
-        return MatchesCounterCaseInsensitive(str,"[бвгджзклмнпрстфхцчшщbcdfghjklmnpqrstvwxz]{1}");
+        return MatchesCounterCaseInsensitive(str,"[бвгджзйклмнпрстфхцчшщbcdfghjklmnpqrstvwxz]{1}");
     }
     public static Integer WordCount(String str,String word){
         return MatchesCounterCaseInsensitive(str,"\\b"+word+"\\b");
