@@ -14,14 +14,18 @@ public class FiguresTest {
         b=4.0;
         c=5.0;
     }
-    @BeforeEach
-    public void init(){}
-
     @Test
     public void testTriangle(){
-        var t=new Triangle(a,b,c);
-        double expected=t.getArea();
+        var f=new Triangle(a,b,c);
+        double expected=f.getArea();
         double actual=6.0;
-        assertEquals(expected,actual,"esli ne udachno");
+        assertEquals(expected,actual,"if failed");
+    }
+    @Test
+    public void testRectangle(){
+        var f=new Rectangle(a,b);
+        double expected=f.getArea();
+        double actual=12.0;
+        assertEquals(expected,actual,"if failed");
     }
 }
