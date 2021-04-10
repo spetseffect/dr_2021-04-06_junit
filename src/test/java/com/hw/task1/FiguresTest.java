@@ -35,4 +35,11 @@ public class FiguresTest {
         double actual=9.0;
         assertEquals(expected,actual,"if failed");
     }
+    @Test
+    public void testRhomb(){
+        var f=new Rhomb(a,b);
+        double expected=f.getArea();
+        double actual=6.0;
+        assertEquals(expected,actual,"if failed");
+    }
 }
