@@ -1,4 +1,4 @@
-package com.hw;
+package com.hw.task1;
 
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
