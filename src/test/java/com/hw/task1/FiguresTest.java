@@ -28,4 +28,11 @@ public class FiguresTest {
         double actual=12.0;
         assertEquals(expected,actual,"if failed");
     }
+    @Test
+    public void testSquare(){
+        var f=new Square(a);
+        double expected=f.getArea();
+        double actual=9.0;
+        assertEquals(expected,actual,"if failed");
+    }
 }
