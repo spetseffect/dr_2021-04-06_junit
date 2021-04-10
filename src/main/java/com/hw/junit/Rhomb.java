@@ -22,9 +22,8 @@ public class Rhomb implements IFigure{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Rhomb rhomb = (Rhomb) o;
-        return ((Double.compare(rhomb.a, a) == 0 && Double.compare(rhomb.b, b) == 0)
-                || (Double.compare(rhomb.b, a) == 0 && Double.compare(rhomb.a, b) == 0))
-                && a!=b;
+        return (Double.compare(rhomb.a, a) == 0 && Double.compare(rhomb.b, b) == 0)
+                || (Double.compare(rhomb.b, a) == 0 && Double.compare(rhomb.a, b) == 0);
     }
 
     @Override
