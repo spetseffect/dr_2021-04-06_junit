@@ -22,12 +22,16 @@ public class StrFuncTest {
     public void testVowelCount(){
         int expected=StrFunc.VowelCount("очередной");
         int actual=4;
+        assertEquals(expected,actual,"testPalindrom failed");
     }
     @Test
     public void testConsonantCount(){
-        int expected=StrFunc.VowelCount("очередной");
+        int expected=StrFunc.ConsonantCount("очередной");
         int actual=5;
     }
     @Test
-    public void testWordCount(){}
+    public void testWordCount(){
+        int expected=StrFunc.WordCount(str,word);
+        int actual=5;
+    }
 }
