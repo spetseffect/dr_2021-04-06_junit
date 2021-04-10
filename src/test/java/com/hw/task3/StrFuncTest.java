@@ -20,14 +20,14 @@ public class StrFuncTest {
     }
     @Test
     public void testVowelCount(){
-        int expected=StrFunc.VowelCount("очередной");
-        int actual=4;
+        int expected=StrFunc.VowelCount(str);
+        int actual=62;
         assertEquals(expected,actual,"testVowelCount failed");
     }
     @Test
     public void testConsonantCount(){
-        int expected=StrFunc.ConsonantCount("очередной");
-        int actual=5;
+        int expected=StrFunc.ConsonantCount(str);
+        int actual=90;
         assertEquals(expected,actual,"testConsonantCount failed");
     }
     @Test
