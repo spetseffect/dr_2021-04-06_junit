@@ -3,9 +3,9 @@ package com.hw.junit;
 import java.util.Objects;
 
 public class Triangle implements IFigure{
-    private double a;
-    private double b;
-    private double c;
+    private final double a;
+    private final double b;
+    private final double c;
 
     public Triangle(double a, double b, double c) {
         this.a = a;

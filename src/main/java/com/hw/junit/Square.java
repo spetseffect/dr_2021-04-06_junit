@@ -3,7 +3,7 @@ package com.hw.junit;
 import java.util.Objects;
 
 public class Square implements IFigure{
-    private double a;
+    private final double a;
 
     public Square(double a) {
         this.a = a;

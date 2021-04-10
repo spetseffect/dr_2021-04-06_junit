@@ -3,8 +3,8 @@ package com.hw.junit;
 import java.util.Objects;
 
 public class Rectangle implements IFigure{
-    private double a;
-    private double b;
+    private final double a;
+    private final double b;
 
     public Rectangle(double a, double b) {
         this.a = a;
@@ -21,7 +21,8 @@ public class Rectangle implements IFigure{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Rectangle rectangle = (Rectangle) o;
-        return Double.compare(rectangle.a, a) == 0 && Double.compare(rectangle.b, b) == 0;
+        return (Double.compare(rectangle.a, a) == 0 && Double.compare(rectangle.b, b) == 0)
+                || (Double.compare(rectangle.b, a) == 0 && Double.compare(rectangle.a, b) == 0);
     }
 
     @Override

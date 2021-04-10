@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class Rhomb implements IFigure{
     //диагонали ромба
-    private double a;
-    private double b;
+    private final double a;
+    private final double b;
 
     public Rhomb(double a, double b) {
         this.a = a;
