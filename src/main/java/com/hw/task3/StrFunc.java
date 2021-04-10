@@ -12,13 +12,21 @@ public class StrFunc {
     }
     public static Integer VowelCount(String str){
         int count=0;
-        Pattern p=Pattern.compile("[аеёиоуыэюяaeiouy]",Pattern.CASE_INSENSITIVE);
+        Pattern p=Pattern.compile("[аеёиоуыэюяaeiouy]{1}",Pattern.CASE_INSENSITIVE);
         Matcher m=p.matcher(str);
         while (m.find()){
             count++;
         }
         return count;
     }
-//    public static Integer ConsonantCount(String str){}
+    public static Integer ConsonantCount(String str){
+        int count=0;
+        Pattern p=Pattern.compile("[бвгджзклмнпрстфхцчшщbcdfghjklmnpqrstvwxz]{1}",Pattern.CASE_INSENSITIVE);
+        Matcher m=p.matcher(str);
+        while (m.find()){
+            count++;
+        }
+        return count;
+    }
 //    public static Integer SubstringCount(String str){}
 }
