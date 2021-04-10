@@ -26,6 +26,6 @@ public class StrFunc {
         return MatchesCounterCaseInsensitive(str,"[бвгджзйклмнпрстфхцчшщbcdfghjklmnpqrstvwxz]{1}");
     }
     public static Integer WordCount(String str,String word){
-        return MatchesCounterCaseInsensitive(str,"\\b"+word+"\\b");
+        return MatchesCounterCaseInsensitive(str,"[\\W]"+word+"[\\W]");
     }
 }
