@@ -1,4 +1,4 @@
-package com.hw.task1;
+package com.hw;
 
 import java.util.Objects;
 
