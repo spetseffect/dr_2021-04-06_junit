@@ -12,7 +12,11 @@ public class MeasureConverterTest {
         assertEquals(expected,actual,"testconvert failed");
     }
     @Test
-    public void testgetMM(){}
+    public void testgetMM(){
+        double expected= MeasureConverter.getMM(245,MeasureUnits.sm);
+        double actual=2450;
+        assertEquals(expected,actual,"testgetMM failed");
+    }
     @Test
     public void testgetSM(){}
     @Test
