@@ -24,7 +24,11 @@ public class MeasureConverterTest {
         assertEquals(expected,actual,"testgetSM failed");
     }
     @Test
-    public void testgetDM(){}
+    public void testgetDM(){
+        double expected= MeasureConverter.getDM(245,MeasureUnits.km);
+        double actual=2450000;
+        assertEquals(expected,actual,"testgetDM failed");
+    }
     @Test
     public void testgetM(){}
     @Test
