@@ -1,6 +1,5 @@
 package com.hw.task4;
 
-import com.hw.task3.StrFunc;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -30,7 +29,11 @@ public class MeasureConverterTest {
         assertEquals(expected,actual,"testgetDM failed");
     }
     @Test
-    public void testgetM(){}
+    public void testgetM(){
+        double expected= MeasureConverter.getM(245,MeasureUnits.mm);
+        double actual=0.245;
+        assertEquals(expected,actual,"testgetM failed");
+    }
     @Test
     public void testgetKM(){}
 }
