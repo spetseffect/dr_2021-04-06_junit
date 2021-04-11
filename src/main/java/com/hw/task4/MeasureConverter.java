@@ -1,7 +1,7 @@
 package com.hw.task4;
 
 public class MeasureConverter {
-    public static Double convert(double valueIn, MeasureUnits unitIn, double valueOut, MeasureUnits unitOut) {
+    public static Double convert(double valueIn, MeasureUnits unitIn, MeasureUnits unitOut) {
         return switch (unitOut) {
             case mm -> getMM(valueIn, unitIn);
             case sm -> getSM(valueIn, unitIn);
