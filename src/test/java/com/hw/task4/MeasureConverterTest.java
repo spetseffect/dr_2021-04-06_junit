@@ -35,5 +35,9 @@ public class MeasureConverterTest {
         assertEquals(expected,actual,"testgetM failed");
     }
     @Test
-    public void testgetKM(){}
+    public void testgetKM(){
+        double expected= MeasureConverter.getKM(245,MeasureUnits.m);
+        double actual=0.245;
+        assertEquals(expected,actual,"testgetKM failed");
+    }
 }
