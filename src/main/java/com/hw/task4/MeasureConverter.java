@@ -13,4 +13,13 @@ public class MeasureConverter {
             case km -> valueIn * 1000000;
         };
     }
+    public static Double getSM(double valueIn,MeasureUnits unitIn){
+        return switch (unitIn) {
+            case mm -> valueIn / 10;
+            case sm -> valueIn;
+            case dm -> valueIn * 10;
+            case m -> valueIn * 100;
+            case km -> valueIn * 100000;
+        };
+    }
 }
