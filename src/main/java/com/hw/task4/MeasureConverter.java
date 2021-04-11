@@ -2,7 +2,13 @@ package com.hw.task4;
 
 public class MeasureConverter {
     public static Double convert(double valueIn, MeasureUnits unitIn, double valueOut, MeasureUnits unitOut) {
-        return null;
+        return switch (unitOut) {
+            case mm -> getMM(valueIn, unitIn);
+            case sm -> getSM(valueIn, unitIn);
+            case dm -> getDM(valueIn, unitIn);
+            case  m -> getM(valueIn, unitIn);
+            case km -> getKM(valueIn, unitIn);
+        };
     }
     public static Double getMM(double valueIn, MeasureUnits unitIn) {
         return switch (unitIn) {
