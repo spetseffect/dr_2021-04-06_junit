@@ -9,7 +9,7 @@ public class MeasureConverterTest {
     public void testconvert(){
         double expected= MeasureConverter.convert(245,MeasureUnits.mm,MeasureUnits.sm);
         double actual=24.5;
-        assertEquals(expected,actual,"testVowelCount failed");
+        assertEquals(expected,actual,"testconvert failed");
     }
     @Test
     public void testgetMM(){}
